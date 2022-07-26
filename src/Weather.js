@@ -42,6 +42,7 @@ setWeatherInfo({
                     <button className="button-search-city">Search</button>
                 </form>
             <WeatherData data={weatherInfo}/>
+            <footer className="fixed-bottom"><a href="https://github.com/natalie-0073/react-weather-app.git" target="_blank" rel="noreferrer">Open-source</a> code by <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nataliia-chala0073/">Nataliia Chala</a></footer>
             </div>
         );
       }

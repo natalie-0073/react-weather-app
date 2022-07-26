@@ -31,9 +31,6 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 100;
 }
 .form-search{
-   
-    
-    
     width: 700px;
     display: block;
     margin: 0px auto;
@@ -65,4 +62,21 @@ h1,h2,h3,h4,h5,h6{
 }
 .weather-description{
 text-transform: capitalize;
+}
+.context{
+    height: 100%;
+}
+.small-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+.small-link:hover{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+footer a:hover{
+    color: rgba(255,255,255,1);
 }
