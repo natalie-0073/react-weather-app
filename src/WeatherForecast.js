@@ -6,7 +6,7 @@ export default function WeatherForecast(){
             <div className="row">
                 <div className="col-2">
                     <div>Thu</div>
-                    <WeatherIcon size={45} code="01n"/>
+                    <WeatherIcon code="01n" size={45} />
                     <div>
                         <span>19&deg;</span>
                         <span>10&deg;</span>
