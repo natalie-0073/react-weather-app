@@ -21,7 +21,7 @@ export default function WeatherData(props){
                         <WeatherTemp celsius={props.data.temperature}/>
                     </div>
                 </div>
-                <WeatherForecast/>
+                <WeatherForecast coordinates={props.data.coordinates}/>
     </div>
               
  </div>

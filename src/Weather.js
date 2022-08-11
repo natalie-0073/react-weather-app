@@ -9,6 +9,7 @@ export default function Weather(props){
     function handleResponse(response){
 setWeatherInfo({
     ready:true,
+    coordinates: response.data.coord,
     temperature: response.data.main.temp,
     humidity: response.data.main.humidity,
     date: new Date(response.data.dt*1000),
@@ -30,7 +31,7 @@ setWeatherInfo({
     }
     function search() {
         
-        const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+        const apiKey = "ef6474d7c06b8fcbb3388c0963600854";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(handleResponse);
         
@@ -43,7 +44,7 @@ setWeatherInfo({
                     <button className="button-search-city">Search</button>
                 </form>
                 
-            <WeatherData data={weatherInfo}/>
+            <WeatherData data={weatherInfo} />
             
             <footer className="fixed-bottom"><a href="https://github.com/natalie-0073/react-weather-app.git" target="_blank" rel="noreferrer">Open-source</a> code by <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nataliia-chala0073/">Nataliia Chala</a></footer>
             </div>
