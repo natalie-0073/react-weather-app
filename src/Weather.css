@@ -82,3 +82,6 @@ footer a{
 footer a:hover{
     color: rgba(255,255,255,1);
 }
+.min-temp-span{
+    color: rgba(255, 255, 255, 0.5);
+}
